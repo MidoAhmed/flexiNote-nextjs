@@ -1,4 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- FlexiNote is an MVP app for note taking (Like Notion/wiki) using Next.js
+- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Stack
+
+- Typescript
+- eslint and prettier setup
+- Next.js v13
+- Node v18.16.0 (LTS)
+- MongoDB (can use free hosted one, will cover this later)
+- Tailwind CSS
+
+## MVP features
+
+- User Registration and Authentication :
+
+  - [next-auth](https://next-auth.js.org/) It handles all of our auth needs and more.
+  - We want to allow users to signup with a Github account and then use a JWT to authenticate requests.
+
+- ~~creating API routes~~
+- ~~previewing content~~
+- ~~previewing your entire app~~
 
 ## Getting Started
 
