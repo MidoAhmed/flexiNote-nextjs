@@ -8,7 +8,7 @@
 - Next.js v13
 - Node v18.16.0 (LTS)
 - MongoDB (can use free hosted one, will cover this later)
-- Tailwind CSS
+- ~~Tailwind CSS~~
 
 ## MVP features
 
