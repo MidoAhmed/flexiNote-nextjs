@@ -17,6 +17,14 @@
   - [next-auth](https://next-auth.js.org/) It handles all of our auth needs and more.
   - We want to allow users to signup with a Github account and then use a JWT to authenticate requests.
 
+- Static routes and content:
+
+  - Landing page that matches the published content from our CMS (Fake CMS content)
+
+- Dynamic routes and content:
+
+  - Blog Posts
+
 - ~~creating API routes~~
 - ~~previewing content~~
 - ~~previewing your entire app~~
