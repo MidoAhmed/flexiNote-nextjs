@@ -1,10 +1,11 @@
-import React, { FC } from 'react'
-import { Pane, majorScale } from 'evergreen-ui'
-import Container from '../components/container'
-import Hero from '../components/hero'
-import HomeNav from '../components/homeNav'
-import FeatureSection from '../components/featureSection'
-import { home } from '../content'
+import React, { FC } from 'react';
+import { Pane, majorScale } from 'evergreen-ui';
+import Container from '../components/container';
+import Hero from '../components/hero';
+import HomeNav from '../components/homeNav';
+import FeatureSection from '../components/featureSection';
+import { home } from '../content';
+import Footer from '../components/footer';
 
 const Home: FC<{ content: { hero: any; features: any[] } }> = ({ content }) => {
   return (
@@ -21,19 +22,15 @@ const Home: FC<{ content: { hero: any; features: any[] } }> = ({ content }) => {
             key={feature.title}
             title={feature.title}
             body={feature.body}
-            image="/docs.png"
+            image='/docs.png'
             invert={i % 2 === 0}
           />
         ))}
       </main>
-      <footer>
-        <Pane background="overlay" paddingY={majorScale(9)}>
-          <Container>hello</Container>
-        </Pane>
-      </footer>
+      <Footer />
     </Pane>
-  )
-}
+  );
+};
 
 /**
  * Should really get this content from our CMS
@@ -44,14 +41,14 @@ Home.defaultProps = {
     features: [{ title: 'default feature', body: 'default body' }],
     hero: { title: 'default title', body: 'default body' },
   },
-}
+};
 
 export function getStaticProps(ctx) {
   return {
     props: {
       content: ctx.preview ? home.draft : home.published,
     },
-  }
+  };
 }
 
-export default Home
+export default Home;
