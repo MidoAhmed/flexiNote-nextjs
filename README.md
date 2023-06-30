@@ -1,5 +1,6 @@
-- FlexiNote is an MVP app for note taking (Like Notion/wiki) using Next.js
-- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- FlexiNote is an MVP app built with Next.js for note-taking purposes, inspired by applications like Notion/Wiki.
+
+  NB: This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Stack
 
