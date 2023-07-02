@@ -3,15 +3,15 @@ import { Pane, majorScale, Text } from 'evergreen-ui';
 import { useRouter } from 'next/router';
 import Logo from '../components/logo';
 import SocialButton from '../components/socialButton';
-import { signIn, useSession } from 'next-auth/react';
+import { signIn, useSession } from 'next-auth/client';
 
 const Signin = () => {
-  const { data: session } = useSession();
+  const [session, loading] = useSession();
   const router = useRouter();
 
   useEffect(() => {
     if (session) {
-      console.log(session);
+      console.log('session -- 1', session);
       router.push('/app');
     }
   }, [session, router]);

@@ -3,10 +3,10 @@ import { Pane, majorScale, Text, Button } from 'evergreen-ui';
 import NextLink from 'next/link';
 import Container from './container';
 import Logo from './logo';
-import { useSession, signIn, signOut } from 'next-auth/react';
+import { useSession, signIn, signOut } from 'next-auth/client';
 
 const HomeNav: FC<{ links?: { name: string; link: string }[] }> = ({ links }) => {
-  const { data: session } = useSession();
+  const [session] = useSession();
 
   return (
     <nav>
