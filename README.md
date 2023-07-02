@@ -26,7 +26,8 @@
 
   - Blog Posts
 
-- ~~creating API routes~~
+- Conntecting to a DB (MongoDB)
+- Creating API routes
 - ~~previewing content~~
 - ~~previewing your entire app~~
 
