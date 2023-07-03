@@ -31,6 +31,10 @@
 - ~~previewing content~~
 - ~~previewing your entire app~~
 
+## Simple Architecture
+
+![alt text](./public/FlexiNote-arch.png 'Architecture ')
+
 ## Getting Started
 
 First, run the development server:
